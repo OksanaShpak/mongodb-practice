@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style></style>
+  <script></script>
+</head>
+
+<body>
+  <table class="students-table">
+    <thead>
+      <tr>
+        <th>(index)</th>
+        <th>_id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>delete</th>
+        <th>edit</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+
+  <button class="toggle-form-btn"></button>
+
+  <form class="form hidden" action="javascript:" id="add-form">
+    <label>
+      Name
+      <input type="text" name="name" placeholder="name">
+    </label>
+    <label>
+      Age
+      <input type="number" name="age" placeholder="age">
+    </label>
+    <button class="submit" type="submit">Submit</button>
+  </form>
+
+  <form class="form hidden" action="javascript:" id="edit-form">
+    <input type="text" name="studentId" placeholder="studentId" hidden>
+
+    <label>
+      Name
+      <input type="text" name="name" placeholder="name">
+    </label>
+    <label>
+      Age
+      <input type="number" name="age" placeholder="age">
+    </label>
+    <button class="update" type="submit">Update</button>
+    <button class="cancel" type="button">Cancel</button>
+  </form>
+
+</body>
+
+</html>
